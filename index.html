@@ -18,6 +18,63 @@
 
 	<style>
 
+		.heading-container h1 {
+			text-align: center;
+			color: #fff;
+		}
+
+		.heading-container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			padding: 0 10px;
+			margin-left: -371.5px;
+		}
+
+		@media only screen and (max-width: 740px) {
+			.heading-container {
+				margin-left: auto;
+				left: auto;
+			}
+		}
+
+		header > .container {
+			z-index: 10;
+			position: sticky;
+			top: 0;
+			width: 100%;
+			background-color: rgb(255, 2555, 255);
+			max-width: 100%;
+			padding-left: 20px;
+			padding-top: 5px;
+
+		}
+
+		.image {
+			z-index: -1;
+			width: 100%;
+			height: 100vh;
+			margin: 0 auto;
+			background-image: url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.image::after {
+			z-index: 0;
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		.learn-more p, .learn-more p a {
+			text-align: center;
+			color: #fff;
+			text-decoration: none;
+		}
+
 	</style>
 </head>
 <body>
@@ -58,14 +115,16 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="container">
+		<div class="image"></div>
+		<div class="heading-container">
 			<h1>Hi, I'm John. A Front-End Web Development Student.</h1>
 			<div class="learn-more">
-				<p>Learn More <i class="fas fa-chevron-down"></i></p>
+				<p><a href="#main">Learn More <i class="fas fa-chevron-down"></i></a></p>
 			</div>
 		</div>
 	</header>
-	<main>
+	<main id="main">
+		<h2>Languages I speak:</h2>
 	</main>
 </body>
 </html>
