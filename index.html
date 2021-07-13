@@ -18,6 +18,12 @@
 
 	<style>
 
+		h2 {
+			text-align: center;
+			font-size: 2rem;
+			padding-top: 30px;
+		}
+
 		.heading-container h1 {
 			text-align: center;
 			color: #fff;
@@ -75,6 +81,66 @@
 			text-decoration: none;
 		}
 
+		.grid-3x {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 150px 220px 220px;
+			grid-column-gap: 30px;
+			text-align: center;
+		}
+
+		.basics-card {
+			grid-column: 2 / 3;
+			grid-row: 2 / 4;
+		}
+
+		main {
+			background-color: #000;
+			color: #fff;
+		}
+
+		.card {
+			background-color: rgb(29, 29, 31);
+			border-radius: 10px;
+		}
+
+		.card h3 {
+			margin-top: 20px;
+		}
+
+		.card p {
+			margin: auto 10px;
+		}
+
+		.flex {
+			display: flex;
+		}
+
+		.benefits div img {
+			width: 60px;
+			height: 60px;
+			margin-right: 10px;
+		}
+
+		.benefits .card h3 {
+			font-size: 1.5rem;
+		}
+
+		.benefits div {
+			margin: 20px 0;
+		}
+
+		.benefits .card .flex {
+			align-items: center;
+			margin: 10px 0;
+
+		}
+
+		.basics-container {
+			display: grid;
+			justify-content: center;
+		}
+
 	</style>
 </head>
 <body>
@@ -124,7 +190,48 @@
 		</div>
 	</header>
 	<main id="main">
-		<h2>Languages I speak:</h2>
+		<h2>Benefits</h2>
+		<div class="container">
+			<div class="grid-3x benefits">
+				<div class="card">
+					<h3>Fast Development</h3>
+					<p>We promise that your website will be finished in no time</p>
+				</div>
+				<div class="card">
+					<h3>Design and Development By One Hand</h3>
+					<p>You only have to contact one person for the whole proccess, from start to finish</p>
+				</div>
+				<div class="card">
+					<h3>Latest Web Standrads</h3>
+					<p>With them we ensure that the website works equally well for everyone, regardless of the location or technology.</p>
+				</div>
+				<div class="card basics-card">
+					<h3>The Basics</h3>
+					<div class="basics-container">
+						<div class="flex">
+							<img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a153d78657dae90a080_responsive.png" alt="">
+							<p>Responsive Design</p>
+						</div>
+						<div class="flex">
+							<img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a14e68d1a679d22fbdd_clean%20css.png" alt="">
+							<p>Clean CSS Stracture</p>
+						</div>
+						<div class="flex">
+							<img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a15e68d1a1d1222fbde_schnelle%20ladezeiten.png" alt="">
+							<p>Fast Loading Times</p>
+						</div>
+						<div class="flex">
+							<img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340865f047536359df73cb_seo.png" alt="">
+							<p>SEO</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<h3>Perfected workflow</h3>
+					<p>That minimizing room for errors and increasing overall efficiency for a smooth project flow.</p>
+				</div>
+			</div>
+		</div>
 	</main>
 </body>
 </html>
