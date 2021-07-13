@@ -21,7 +21,7 @@
 		h2 {
 			text-align: center;
 			font-size: 2rem;
-			padding-top: 30px;
+			padding: 30px 0;
 		}
 
 		.heading-container h1 {
@@ -34,10 +34,15 @@
 			top: 50%;
 			left: 50%;
 			padding: 0 10px;
-			margin-left: -371.5px;
+			margin-left: -300px;
 		}
 
-		@media only screen and (max-width: 740px) {
+		main .container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		@media only screen and (max-width: 600px) {
 			.heading-container {
 				margin-left: auto;
 				left: auto;
@@ -84,8 +89,8 @@
 		.grid-3x {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: 150px 220px 220px;
-			grid-column-gap: 30px;
+			grid-template-rows: 150px 180px 180px;
+			grid-gap: 30px;
 			text-align: center;
 		}
 
@@ -97,6 +102,7 @@
 		main {
 			background-color: #000;
 			color: #fff;
+			padding-bottom: 30px;
 		}
 
 		.card {
@@ -126,10 +132,6 @@
 			font-size: 1.5rem;
 		}
 
-		.benefits div {
-			margin: 20px 0;
-		}
-
 		.benefits .card .flex {
 			align-items: center;
 			margin: 10px 0;
@@ -139,6 +141,38 @@
 		.basics-container {
 			display: grid;
 			justify-content: center;
+		}
+
+		@media only screen and (max-width: 968px) {
+			.grid-3x {
+				display: block;
+			}
+
+			.card {
+				height: auto;
+				padding: 30px;
+			}
+
+			.benefits div {
+				margin: 20px 0;
+			}
+
+			.benefits .card:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		footer {
+			padding: 15px;
+			background-color: rgb(29, 29, 31);
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		footer a {
+			color: #fff;
+			text-decoration: none;
 		}
 
 	</style>
@@ -183,7 +217,7 @@
 		</div>
 		<div class="image"></div>
 		<div class="heading-container">
-			<h1>Hi, I'm John. A Front-End Web Development Student.</h1>
+			<h1>Hi, I'm John. A Front-End Web Developer.</h1>
 			<div class="learn-more">
 				<p><a href="#main">Learn More <i class="fas fa-chevron-down"></i></a></p>
 			</div>
@@ -203,7 +237,7 @@
 				</div>
 				<div class="card">
 					<h3>Latest Web Standrads</h3>
-					<p>With them we ensure that the website works equally well for everyone, regardless of the location or technology.</p>
+					<p>With them we ensure that the website works equally well for everyone, regardless of the location or technology</p>
 				</div>
 				<div class="card basics-card">
 					<h3>The Basics</h3>
@@ -228,10 +262,14 @@
 				</div>
 				<div class="card">
 					<h3>Perfected workflow</h3>
-					<p>That minimizing room for errors and increasing overall efficiency for a smooth project flow.</p>
+					<p>That minimizing room for errors and increasing overall efficiency for a smooth project flow</p>
 				</div>
 			</div>
 		</div>
 	</main>
+	<footer>
+			<p>&copy; 2021 John Lampropoulos</p>
+			<p><a href="privacy.html">Privacy</a></p>
+	</footer>
 </body>
 </html>
