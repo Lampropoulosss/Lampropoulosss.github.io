@@ -32,6 +32,30 @@ nav ul {
 	margin-left: 30px;
 }
 
+footer {
+	padding: 15px;
+	background-color: rgb(29, 29, 31);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header > .container {
+	z-index: 10;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: rgb(255, 2555, 255);
+	max-width: 100%;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
 .logo {
 	width: 50px;
 	height: 50px;
