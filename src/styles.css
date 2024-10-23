@@ -67,7 +67,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 50px 20px;
+  padding: 50px 15px;
   flex-wrap: wrap;
 }
 
@@ -90,7 +90,7 @@ nav a:hover {
 } */
 
 .contact {
-  padding: 50px 20px;
+  padding: 50px 15px;
   text-align: center;
 }
 
@@ -100,9 +100,9 @@ nav a:hover {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 50px 20px;
+  padding: 50px 15px;
 }
 
 .projects .card {
@@ -125,6 +125,7 @@ nav a:hover {
   margin-top: 15px;
   width: 100%;
   border-radius: 0 0 10px 10px;
+  object-fit: cover; /* Ensures the image doesn't overflow */
 }
 
 .projects .card:hover {
@@ -134,7 +135,7 @@ nav a:hover {
 .github-button {
   display: inline-block;
   width: fit-content;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-align: center;
   margin: 10px auto 0 auto;
   background-color: var(--accent-color);
