@@ -1,0 +1,128 @@
+:root {
+  --primary-bg: #1f2937;
+  --secondary-bg: #334155;
+  --accent-color: #0c4a6e;
+  --font-color: #fff;
+  --hover-bg: #11182780;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: var(--font-color);
+  background-color: var(--primary-bg);
+  line-height: 1.6;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+header nav {
+  background-color: var(--secondary-bg);
+  padding: 20px;
+}
+
+nav .container {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav .links {
+  gap: 15px;
+  display: flex;
+}
+
+nav a {
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+nav a:hover {
+  background-color: var(--hover-bg);
+}
+
+.showcase {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  display: flex;
+}
+
+.showcase img {
+  border: 4px solid var(--accent-color);
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 8px 8px #0000001a;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact a {
+  color: var(--accent-color);
+}
+
+.projects {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  display: grid;
+}
+
+.projects .card {
+  background: var(--primary-bg);
+  border: 4px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform .3s;
+  box-shadow: 0 8px 8px #0000001a;
+}
+
+.projects .card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (width <= 900px) {
+  nav h1 {
+    font-size: 1.1rem;
+  }
+
+  nav a {
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=index.4d663569.css.map */
