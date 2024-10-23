@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ioannis Lampropoulos</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.ts"></script>
@@ -12,9 +13,15 @@
         <div class="container">
           <h1>Ioannis Lampropoulos</h1>
           <div class="links">
-            <a href="#about" class="nav">About</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#contact" class="nav">Contact</a>
+            <a onclick="scroll_to('about')" class="nav">About</a>
+            <a onclick="scroll_to('projects')" class="nav">Projects</a>
+            <a onclick="scroll_to('contact')" class="nav">Contact</a>
+          </div>
+          <button class="hamburger-icon" id="hamburger-icon">&#9776;</button>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <a onclick="scroll_to('about')" class="nav">About</a>
+            <a onclick="scroll_to('projects')" class="nav">Projects</a>
+            <a onclick="scroll_to('contact')" class="nav">Contact</a>
           </div>
         </div>
       </nav>
@@ -34,17 +41,38 @@
 
     <section class="projects" id="projects">
       <div class="card">
-        <h3>Website for Chaotic Destiny Hosting</h3>
-        <p>
-          A modern, responsive website built using HTML, CSS, and JavaScript.
-        </p>
+        <div class="project-info">
+          <h3>YouTube to MP3 Converter</h3>
+          <p>
+            Built with Next.js and WebAssembly, this tool converts YouTube
+            videos to MP3.
+          </p>
+        </div>
+        <a
+          href="https://github.com/Lampropoulosss/mp3convert.tv"
+          target="_blank"
+          class="github-button"
+          >View on GitHub</a
+        >
+        <img src="/src/assets/images/mp3convert.png" alt="YouTube to MP3" />
       </div>
       <div class="card">
-        <h3>YouTube to MP3 Converter</h3>
-        <p>
-          Built with Next.js and WebAssembly, this tool converts YouTube videos
-          to MP3.
-        </p>
+        <div class="project-info">
+          <h3>Website for Chaotic Destiny Hosting</h3>
+          <p>
+            A modern, responsive website built using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <a
+          href="https://github.com/Lampropoulosss/Chaotic-Destiny-Hosting"
+          target="_blank"
+          class="github-button"
+          >View on GitHub</a
+        >
+        <img
+          src="/src/assets/images/chaotic-destiny.png"
+          alt="Chaotic Destiny Hosting"
+        />
       </div>
     </section>
 
@@ -54,6 +82,12 @@
         Email:
         <a href="mailto:ioannis.lampropoulos05@gmail.com"
           >ioannis.lampropoulos05@gmail.com</a
+        >
+      </p>
+      <p>
+        Github:
+        <a href="https://github.com/Lampropoulosss"
+          >https://github.com/Lampropoulosss</a
         >
       </p>
     </section>
