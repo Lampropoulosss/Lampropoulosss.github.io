@@ -82,10 +82,11 @@ nav a:hover {
 .overlay {
   z-index: -1;
   background-color: #0d1b2a;
-  width: 160vw;
+  width: 200vw;
   height: 125vh;
   position: fixed;
-  top: -45%;
+  top: -35%;
+  left: -10%;
   transform: rotate(30deg);
 }
 
