@@ -85,12 +85,12 @@ nav a:hover {
 .overlay {
   position: fixed;
   top: -35%;
-  left: -10%;
-  width: 200vw; /* Full width of the viewport */
-  height: 125vh; /* Full height of the viewport */
+  left: -14%;
+  width: 200vw;
+  height: 125vh;
   background-color: #0d1b2a;
   transform: rotate(30deg);
-  z-index: -1; /* Puts it behind other content */
+  z-index: -1;
 }
 
 .about-text {
