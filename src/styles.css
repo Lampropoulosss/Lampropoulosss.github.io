@@ -84,8 +84,9 @@ nav a:hover {
 
 .overlay {
   position: fixed;
-  top: -45%;
-  width: 160vw; /* Full width of the viewport */
+  top: -35%;
+  left: -10%;
+  width: 200vw; /* Full width of the viewport */
   height: 125vh; /* Full height of the viewport */
   background-color: #0d1b2a;
   transform: rotate(30deg);
