@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  z-index: 2;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -76,6 +77,16 @@ nav a:hover {
   margin-bottom: 1rem;
   margin-right: 1rem;
   box-shadow: 0 8px 8px #0000001a;
+}
+
+.overlay {
+  z-index: -1;
+  background-color: #0d1b2a;
+  width: 160vw;
+  height: 125vh;
+  position: fixed;
+  top: -45%;
+  transform: rotate(30deg);
 }
 
 .about-text {
