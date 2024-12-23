@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  row-gap: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+h2 + p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 0 15px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+  background-color: #2a3749;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.success-message {
+  width: 80%;
+  max-width: 400px;
+  background-color: #2a3749;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  color: greenyellow;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #1c2025;
+  color: #fff;
+}
+
+form textarea {
+  resize: none;
+  height: 200px;
+}
+
+#submit-button {
+  background-color: #1c2025;
+  color: #fff;
+  border: 3px solid var(--accent-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error {
+  border: 1px solid crimson;
+}
+
+button[disabled] {
+  background-color: #1c202569 !important;
+  border: none !important;
+  cursor: not-allowed !important;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .success-message,
+  form {
+    width: 100%;
+  }
+}
