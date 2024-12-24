@@ -20,7 +20,7 @@ const validationForButton = () => {
 };
 
 const onValueChange = (e) => {
-  if (e.target.value.length === 0) {
+  if (e.target.value.length === 0 || e.target.value.length > 100) {
     isValidated[e.target.id] = false;
     e.target.classList.add("error");
     return validationForButton();

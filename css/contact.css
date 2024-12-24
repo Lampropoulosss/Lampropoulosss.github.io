@@ -81,7 +81,7 @@ form textarea {
 }
 
 .error {
-  border: 1px solid crimson;
+  border: 2px solid crimson;
 }
 
 button[disabled] {
