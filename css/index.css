@@ -99,3 +99,7 @@
 .github-button:hover {
   background-color: var(--hover-bg);
 }
+
+.contact .description {
+  margin-bottom: 1rem;
+}
